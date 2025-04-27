@@ -1,0 +1,40 @@
+\doxysection{Static\+Program.\+Color\+Converter Class Reference}
+\hypertarget{class_static_program_1_1_color_converter}{}\label{class_static_program_1_1_color_converter}\index{StaticProgram.ColorConverter@{StaticProgram.ColorConverter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_static_program_1_1_color_converter_a162ece732540c9cd876cd915abfc818c}{hsv\+\_\+to\+\_\+rgb\+\_\+matrix}} (self, hsv\+\_\+img)
+\item 
+\mbox{\hyperlink{class_static_program_1_1_color_converter_ac71e56e59baf3d2ce50022b0dbee5ee1}{hsv\+\_\+to\+\_\+rgb\+\_\+loop}} (self, hsv\+\_\+img)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@brief A class for handling color space conversions between HSV and RGB.
+
+@details This class provides two methods for HSV to RGB conversion:
+         1. Matrix-based conversion (fast, vectorized)
+         2. Loop-based conversion (slower, but memory efficient)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_static_program_1_1_color_converter_ac71e56e59baf3d2ce50022b0dbee5ee1}\index{StaticProgram.ColorConverter@{StaticProgram.ColorConverter}!hsv\_to\_rgb\_loop@{hsv\_to\_rgb\_loop}}
+\index{hsv\_to\_rgb\_loop@{hsv\_to\_rgb\_loop}!StaticProgram.ColorConverter@{StaticProgram.ColorConverter}}
+\doxysubsubsection{\texorpdfstring{hsv\_to\_rgb\_loop()}{hsv\_to\_rgb\_loop()}}
+{\footnotesize\ttfamily \label{class_static_program_1_1_color_converter_ac71e56e59baf3d2ce50022b0dbee5ee1} 
+Static\+Program.\+Color\+Converter.\+hsv\+\_\+to\+\_\+rgb\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{hsv\+\_\+img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert HSV to RGB using pixel-by-pixel loop processing.\end{DoxyVerb}
+ \Hypertarget{class_static_program_1_1_color_converter_a162ece732540c9cd876cd915abfc818c}\index{StaticProgram.ColorConverter@{StaticProgram.ColorConverter}!hsv\_to\_rgb\_matrix@{hsv\_to\_rgb\_matrix}}
+\index{hsv\_to\_rgb\_matrix@{hsv\_to\_rgb\_matrix}!StaticProgram.ColorConverter@{StaticProgram.ColorConverter}}
+\doxysubsubsection{\texorpdfstring{hsv\_to\_rgb\_matrix()}{hsv\_to\_rgb\_matrix()}}
+{\footnotesize\ttfamily \label{class_static_program_1_1_color_converter_a162ece732540c9cd876cd915abfc818c} 
+Static\+Program.\+Color\+Converter.\+hsv\+\_\+to\+\_\+rgb\+\_\+matrix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{hsv\+\_\+img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert HSV to RGB using vectorized matrix operations.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_static_program_8py}{Static\+Program.\+py}}\end{DoxyCompactItemize}

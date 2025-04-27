@@ -1,0 +1,371 @@
+\doxysection{GUIProgram.\+HSVAdjustment\+App Class Reference}
+\hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app}{}\label{class_g_u_i_program_1_1_h_s_v_adjustment_app}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+Inheritance diagram for GUIProgram.\+HSVAdjustment\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_g_u_i_program_1_1_h_s_v_adjustment_app}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a0ca8dc272a62c2d085756e4a3adef123}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a493df31e0c9ebcbb116940cd54c9d9fe}{update\+\_\+slider\+\_\+labels}} (self)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a86fc87d1b99891b3cb5792658adee245}{load\+\_\+image}} (self)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_af9c8b047b8fe8e7b4718d723b1d9eb46}{update\+\_\+sliders\+\_\+and\+\_\+image}} (self)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a841b67411bbb3e85709e8b591d11c280}{update\+\_\+image}} (self)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a13fdebe4585241178f79e244ad8c4f16}{show\+\_\+images}} (self)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_ade81725f676bbef584e4b1a3549cf613}{resize\+Event}} (self, event)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a0527b7b1f703719fd33b54268e12d951}{hsv\+\_\+to\+\_\+rgb\+\_\+matrix}} (self, hsv\+\_\+img)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_aa2f39f6fc651d59f02266f4d4ebfe1d0}{hsv\+\_\+to\+\_\+rgb\+\_\+loop}} (self, hsv\+\_\+img)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_ad907b4fbdff63e8607f1d7a7fa9ce8d9}{save\+\_\+image}} (self, method=\textquotesingle{}matrix\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a180defcb4c91fd04ba64d59685adf901}{compare\+\_\+methods}} (self)
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_ae8f6f8829de977b8e50e58a794602c90}{show\+Event}} (self, event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a1b6a47844111d9d6ccc8d79768dcc3d8}{image\+\_\+path}} = None
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_ad88c7a9d1510dc2f53d2469f3c5883ee}{original\+\_\+image}} = None
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a48dbec929cbe342ffbdf386407c0a4c7}{adjusted\+\_\+image}} = None
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_ade789b86f2befce144a563482a574dd4}{hsv\+\_\+image}} = None
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a8c2eba2bb3ade23836b531a1f5a36b2a}{current\+\_\+hsv}} = None
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_afd41ef6c27bae1a19b1ebaf6f304042b}{load\+\_\+image}}
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_af80d86f1e5fd1f8550a1e9c1c023ecc0}{compare\+\_\+methods}}
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a55be246a0201a679526a6772bafb7321}{update\+\_\+sliders\+\_\+and\+\_\+image}}
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a9ac678e659eab7136b71af993464ddc8}{original\+\_\+scene}} = QGraphics\+Scene()
+\item 
+\mbox{\hyperlink{class_g_u_i_program_1_1_h_s_v_adjustment_app_a47fd410459a07da68229ec449fd587c5}{adjusted\+\_\+scene}} = QGraphics\+Scene()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Main application class for HSV image adjustment.
+
+@brief GUI application for HSV color space manipulation
+
+@details This class implements a GUI application that provides tools for:
+         - Image loading and display
+         - Real-time HSV adjustments
+         - Conversion method comparison
+         - Image saving capabilities
+         The application uses OpenCV for image processing and PyQt6 for the GUI.
+
+@exception RuntimeError If GUI components fail to initialize
+@exception ImportError If required libraries are not available
+@see QWidget Base class providing GUI functionality
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a0ca8dc272a62c2d085756e4a3adef123}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a0ca8dc272a62c2d085756e4a3adef123} 
+GUIProgram.\+HSVAdjustment\+App.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize the HSV Adjustment application.
+
+@brief Set up the UI components and initialize application state
+
+@details Sets up the UI components, initializes variables, and connects signal handlers
+
+@exception FileNotFoundError If the UI file cannot be found
+@exception RuntimeError If UI components cannot be initialized
+@exception ImportError If required Qt modules cannot be loaded
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a180defcb4c91fd04ba64d59685adf901}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!compare\_methods@{compare\_methods}}
+\index{compare\_methods@{compare\_methods}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{compare\_methods()}{compare\_methods()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a180defcb4c91fd04ba64d59685adf901} 
+GUIProgram.\+HSVAdjustment\+App.\+compare\+\_\+methods (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compare performance between matrix and loop-based conversion methods.
+
+@brief Benchmark different HSV to RGB conversion methods
+
+@details Tests both conversion methods on different image sizes:
+        - 100x100 (small image)
+        - 400x400 (medium image)
+        - 800x800 (large image)
+
+@exception RuntimeError If comparison fails
+@exception MemoryError If insufficient memory for testing
+@exception ValueError If current image is invalid
+@see hsv_to_rgb_matrix For the matrix-based implementation
+@see hsv_to_rgb_loop For the loop-based implementation
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_aa2f39f6fc651d59f02266f4d4ebfe1d0}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!hsv\_to\_rgb\_loop@{hsv\_to\_rgb\_loop}}
+\index{hsv\_to\_rgb\_loop@{hsv\_to\_rgb\_loop}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{hsv\_to\_rgb\_loop()}{hsv\_to\_rgb\_loop()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_aa2f39f6fc651d59f02266f4d4ebfe1d0} 
+GUIProgram.\+HSVAdjustment\+App.\+hsv\+\_\+to\+\_\+rgb\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{hsv\+\_\+img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert HSV to RGB using pixel-by-pixel loop processing.
+
+@brief Perform HSV to RGB conversion using explicit loops
+
+@param hsv_img Input HSV image in OpenCV format (H: 0-180, S/V: 0-255)
+@type hsv_img numpy.ndarray
+@return RGB image in uint8 format
+@rtype numpy.ndarray
+
+@details This method processes each pixel individually, which is slower
+        but may be more memory-efficient for very large images
+
+@exception ValueError If input is not a 3-channel numpy array
+@exception TypeError If input array has incorrect data type
+@exception MemoryError If insufficient memory for processing
+@see hsv_to_rgb_matrix For the optimized matrix implementation
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a0527b7b1f703719fd33b54268e12d951}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!hsv\_to\_rgb\_matrix@{hsv\_to\_rgb\_matrix}}
+\index{hsv\_to\_rgb\_matrix@{hsv\_to\_rgb\_matrix}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{hsv\_to\_rgb\_matrix()}{hsv\_to\_rgb\_matrix()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a0527b7b1f703719fd33b54268e12d951} 
+GUIProgram.\+HSVAdjustment\+App.\+hsv\+\_\+to\+\_\+rgb\+\_\+matrix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{hsv\+\_\+img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert HSV to RGB using vectorized matrix operations.
+
+@brief Perform HSV to RGB conversion using optimized NumPy operations
+
+@param hsv_img Input HSV image in OpenCV format (H: 0-180, S/V: 0-255)
+@type hsv_img numpy.ndarray
+@return RGB image in uint8 format
+@rtype numpy.ndarray
+
+@details Performs color space conversion using NumPy's optimized operations.
+        The conversion follows the standard HSV to RGB algorithm but vectorized
+        for better performance
+
+@exception ValueError If input is not a 3-channel numpy array
+@exception TypeError If input array has incorrect data type
+@exception MemoryError If insufficient memory for processing
+@see hsv_to_rgb_loop For the alternative implementation
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a86fc87d1b99891b3cb5792658adee245}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!load\_image@{load\_image}}
+\index{load\_image@{load\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{load\_image()}{load\_image()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a86fc87d1b99891b3cb5792658adee245} 
+GUIProgram.\+HSVAdjustment\+App.\+load\+\_\+image (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load an image file selected through a file dialog.
+
+@brief Load and initialize an image for HSV processing
+
+@details Opens a file dialog for image selection, loads the selected image,
+        and initializes it for HSV processing
+
+@exception IOError If the image file cannot be read
+@exception cv2.error If OpenCV fails to process the image
+@exception MemoryError If image is too large to process
+@see show_images For display update
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_ade81725f676bbef584e4b1a3549cf613}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_ade81725f676bbef584e4b1a3549cf613} 
+GUIProgram.\+HSVAdjustment\+App.\+resize\+Event (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle window resize events.
+
+@param event The resize event containing the window's new dimensions
+@details Ensures images are properly scaled when the window is resized
+        while maintaining their aspect ratios.
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_ad907b4fbdff63e8607f1d7a7fa9ce8d9}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!save\_image@{save\_image}}
+\index{save\_image@{save\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{save\_image()}{save\_image()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_ad907b4fbdff63e8607f1d7a7fa9ce8d9} 
+GUIProgram.\+HSVAdjustment\+App.\+save\+\_\+image (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{method}{ = {\ttfamily \textquotesingle{}matrix\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save the processed image using the specified conversion method.
+
+@brief Save the current image state to a file
+
+@param method Conversion method to use ('matrix' or 'loop')
+@type method str
+
+@details Displays a file dialog for saving the image and shows processing time.
+        Supported formats: JPEG (.jpg), PNG (.png)
+
+@exception IOError If the file cannot be written
+@exception ValueError If the conversion method is invalid
+@exception MemoryError If insufficient memory for processing
+@see hsv_to_rgb_matrix For matrix-based conversion
+@see hsv_to_rgb_loop For loop-based conversion
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a13fdebe4585241178f79e244ad8c4f16}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!show\_images@{show\_images}}
+\index{show\_images@{show\_images}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{show\_images()}{show\_images()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a13fdebe4585241178f79e244ad8c4f16} 
+GUIProgram.\+HSVAdjustment\+App.\+show\+\_\+images (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Display both original and adjusted images in the UI.
+
+@details Converts the numpy arrays to QImage format and displays them
+        in their respective QGraphicsView widgets while maintaining aspect ratio.
+
+@exception ValueError If image data is invalid
+@exception RuntimeError If graphics view initialization fails
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_ae8f6f8829de977b8e50e58a794602c90}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!showEvent@{showEvent}}
+\index{showEvent@{showEvent}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{showEvent()}{showEvent()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_ae8f6f8829de977b8e50e58a794602c90} 
+GUIProgram.\+HSVAdjustment\+App.\+show\+Event (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle the initial window show event.
+
+@brief Initialize graphics views on window display
+
+@param event The show event object
+@type event QShowEvent
+
+@details Ensures proper initialization and scaling of graphics views
+        when the window is first displayed
+
+@exception RuntimeError If graphics views cannot be initialized
+@see resizeEvent For handling subsequent size changes
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a841b67411bbb3e85709e8b591d11c280}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!update\_image@{update\_image}}
+\index{update\_image@{update\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{update\_image()}{update\_image()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a841b67411bbb3e85709e8b591d11c280} 
+GUIProgram.\+HSVAdjustment\+App.\+update\+\_\+image (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process and update the displayed image based on current HSV settings.
+
+@brief Apply HSV adjustments and update display
+
+@details Applies the current HSV adjustments to the image and updates the display:
+        - Hue shift (0-180 degrees)
+        - Saturation multiplication (0-200%)
+        - Value/brightness gamma adjustment (0-200%)
+
+@exception ValueError If adjustment values are out of valid range
+@exception RuntimeError If image processing fails
+@exception MemoryError If insufficient memory for processing
+@see hsv_to_rgb_matrix For the color space conversion
+@see show_images For the display update
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a493df31e0c9ebcbb116940cd54c9d9fe}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!update\_slider\_labels@{update\_slider\_labels}}
+\index{update\_slider\_labels@{update\_slider\_labels}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{update\_slider\_labels()}{update\_slider\_labels()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a493df31e0c9ebcbb116940cd54c9d9fe} 
+GUIProgram.\+HSVAdjustment\+App.\+update\+\_\+slider\+\_\+labels (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the UI labels with current slider values.
+
+@brief Update numerical displays for HSV sliders
+
+@details Updates the text displays showing the current values of all HSV sliders
+
+@exception ValueError If slider values are invalid
+@see update_image For the actual image processing
+\end{DoxyVerb}
+ \Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_af9c8b047b8fe8e7b4718d723b1d9eb46}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!update\_sliders\_and\_image@{update\_sliders\_and\_image}}
+\index{update\_sliders\_and\_image@{update\_sliders\_and\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{update\_sliders\_and\_image()}{update\_sliders\_and\_image()}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_af9c8b047b8fe8e7b4718d723b1d9eb46} 
+GUIProgram.\+HSVAdjustment\+App.\+update\+\_\+sliders\+\_\+and\+\_\+image (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handle slider value changes and update the image.
+
+@brief Update image processing based on slider changes
+
+@details Updates both the slider value labels and processes the image
+        when any HSV slider value changes
+
+@exception ValueError If slider values are out of valid range
+@see update_image For the actual image processing
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a48dbec929cbe342ffbdf386407c0a4c7}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!adjusted\_image@{adjusted\_image}}
+\index{adjusted\_image@{adjusted\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{adjusted\_image}{adjusted\_image}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a48dbec929cbe342ffbdf386407c0a4c7} 
+GUIProgram.\+HSVAdjustment\+App.\+adjusted\+\_\+image = None}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a47fd410459a07da68229ec449fd587c5}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!adjusted\_scene@{adjusted\_scene}}
+\index{adjusted\_scene@{adjusted\_scene}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{adjusted\_scene}{adjusted\_scene}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a47fd410459a07da68229ec449fd587c5} 
+GUIProgram.\+HSVAdjustment\+App.\+adjusted\+\_\+scene = QGraphics\+Scene()}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_af80d86f1e5fd1f8550a1e9c1c023ecc0}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!compare\_methods@{compare\_methods}}
+\index{compare\_methods@{compare\_methods}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{compare\_methods}{compare\_methods}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_af80d86f1e5fd1f8550a1e9c1c023ecc0} 
+GUIProgram.\+HSVAdjustment\+App.\+compare\+\_\+methods}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a8c2eba2bb3ade23836b531a1f5a36b2a}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!current\_hsv@{current\_hsv}}
+\index{current\_hsv@{current\_hsv}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{current\_hsv}{current\_hsv}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a8c2eba2bb3ade23836b531a1f5a36b2a} 
+GUIProgram.\+HSVAdjustment\+App.\+current\+\_\+hsv = None}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_ade789b86f2befce144a563482a574dd4}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!hsv\_image@{hsv\_image}}
+\index{hsv\_image@{hsv\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{hsv\_image}{hsv\_image}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_ade789b86f2befce144a563482a574dd4} 
+GUIProgram.\+HSVAdjustment\+App.\+hsv\+\_\+image = None}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a1b6a47844111d9d6ccc8d79768dcc3d8}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!image\_path@{image\_path}}
+\index{image\_path@{image\_path}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{image\_path}{image\_path}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a1b6a47844111d9d6ccc8d79768dcc3d8} 
+GUIProgram.\+HSVAdjustment\+App.\+image\+\_\+path = None}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_afd41ef6c27bae1a19b1ebaf6f304042b}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!load\_image@{load\_image}}
+\index{load\_image@{load\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{load\_image}{load\_image}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_afd41ef6c27bae1a19b1ebaf6f304042b} 
+GUIProgram.\+HSVAdjustment\+App.\+load\+\_\+image}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_ad88c7a9d1510dc2f53d2469f3c5883ee}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!original\_image@{original\_image}}
+\index{original\_image@{original\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{original\_image}{original\_image}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_ad88c7a9d1510dc2f53d2469f3c5883ee} 
+GUIProgram.\+HSVAdjustment\+App.\+original\+\_\+image = None}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a9ac678e659eab7136b71af993464ddc8}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!original\_scene@{original\_scene}}
+\index{original\_scene@{original\_scene}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{original\_scene}{original\_scene}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a9ac678e659eab7136b71af993464ddc8} 
+GUIProgram.\+HSVAdjustment\+App.\+original\+\_\+scene = QGraphics\+Scene()}
+
+\Hypertarget{class_g_u_i_program_1_1_h_s_v_adjustment_app_a55be246a0201a679526a6772bafb7321}\index{GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}!update\_sliders\_and\_image@{update\_sliders\_and\_image}}
+\index{update\_sliders\_and\_image@{update\_sliders\_and\_image}!GUIProgram.HSVAdjustmentApp@{GUIProgram.HSVAdjustmentApp}}
+\doxysubsubsection{\texorpdfstring{update\_sliders\_and\_image}{update\_sliders\_and\_image}}
+{\footnotesize\ttfamily \label{class_g_u_i_program_1_1_h_s_v_adjustment_app_a55be246a0201a679526a6772bafb7321} 
+GUIProgram.\+HSVAdjustment\+App.\+update\+\_\+sliders\+\_\+and\+\_\+image}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_g_u_i_program_8py}{GUIProgram.\+py}}\end{DoxyCompactItemize}

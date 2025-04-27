@@ -1,0 +1,128 @@
+\doxysection{Static\+Program Namespace Reference}
+\hypertarget{namespace_static_program}{}\label{namespace_static_program}\index{StaticProgram@{StaticProgram}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_static_program_1_1_color_converter}{Color\+Converter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_static_program_ac8da54a63389baa0bccfaa70c917e1f0}{modify\+\_\+hsv\+\_\+image}} (image\+\_\+path, hue\+\_\+shift, value\+\_\+exp, save\+\_\+path=None, print\+\_\+values=False)
+\item 
+\mbox{\hyperlink{namespace_static_program_a1b7a09d2dc7bc0ad94a33e48e29dc7f1}{compare\+\_\+performance}} (image\+\_\+paths)
+\item 
+\mbox{\hyperlink{namespace_static_program_a6d70a2609559663ba707affb75e0b9bd}{show\+\_\+results}} (original, modified\+\_\+loops, modified\+\_\+matrix)
+\item 
+\mbox{\hyperlink{namespace_static_program_a2b187cd2a4fbcecfb7df58c9f9582797}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_static_program_a1b7a09d2dc7bc0ad94a33e48e29dc7f1}\index{StaticProgram@{StaticProgram}!compare\_performance@{compare\_performance}}
+\index{compare\_performance@{compare\_performance}!StaticProgram@{StaticProgram}}
+\doxysubsubsection{\texorpdfstring{compare\_performance()}{compare\_performance()}}
+{\footnotesize\ttfamily \label{namespace_static_program_a1b7a09d2dc7bc0ad94a33e48e29dc7f1} 
+Static\+Program.\+compare\+\_\+performance (\begin{DoxyParamCaption}\item[{}]{image\+\_\+paths}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Compare performance between loop and matrix-based conversion methods.
+
+@details This function:
+         1. Loads each image from the provided paths
+         2. Times both conversion methods on each image
+         3. Creates performance comparison plots
+         4. Saves results as 'performance_comparison.png'
+
+@param image_paths List of paths to test images of different sizes
+@type image_paths list[str]
+
+@exception FileNotFoundError If any image file cannot be found
+@exception ValueError If images cannot be loaded
+@exception IOError If saving the plot fails
+
+@see hsv_to_rgb_loop For the loop-based implementation
+@see hsv_to_rgb_matrix For the matrix-based implementation
+\end{DoxyVerb}
+ \Hypertarget{namespace_static_program_a2b187cd2a4fbcecfb7df58c9f9582797}\index{StaticProgram@{StaticProgram}!main@{main}}
+\index{main@{main}!StaticProgram@{StaticProgram}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{namespace_static_program_a2b187cd2a4fbcecfb7df58c9f9582797} 
+Static\+Program.\+main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Application entry point demonstrating library functionality.
+
+@details This function demonstrates the core functionality of the library:
+         1. Image loading and HSV modification
+         2. Visualization of transformations
+         3. Performance comparison between methods
+         4. Saving results to files
+
+The function uses example values:
+- Hue shift: 120 degrees
+- Value exponential: 1.5
+
+@exception FileNotFoundError If the input image cannot be found
+@exception RuntimeError If processing fails
+@exception IOError If saving output files fails
+
+@see modify_hsv_image For the core transformation function
+@see visualize_hsv_changes For HSV visualization
+@see compare_performance For method comparison
+\end{DoxyVerb}
+ \Hypertarget{namespace_static_program_ac8da54a63389baa0bccfaa70c917e1f0}\index{StaticProgram@{StaticProgram}!modify\_hsv\_image@{modify\_hsv\_image}}
+\index{modify\_hsv\_image@{modify\_hsv\_image}!StaticProgram@{StaticProgram}}
+\doxysubsubsection{\texorpdfstring{modify\_hsv\_image()}{modify\_hsv\_image()}}
+{\footnotesize\ttfamily \label{namespace_static_program_ac8da54a63389baa0bccfaa70c917e1f0} 
+Static\+Program.\+modify\+\_\+hsv\+\_\+image (\begin{DoxyParamCaption}\item[{}]{image\+\_\+path}{, }\item[{}]{hue\+\_\+shift}{, }\item[{}]{value\+\_\+exp}{, }\item[{}]{save\+\_\+path}{ = {\ttfamily None}, }\item[{}]{print\+\_\+values}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Load an image and modify its HSV color space values.
+
+@details This function performs the following operations:
+         1. Loads an image from the specified path
+         2. Converts it from BGR to RGB to HSV color space
+         3. Modifies the Hue and Value channels based on input parameters
+         4. Converts back to RGB using both loop and matrix-based methods
+         5. Optionally saves the result and prints transformation details
+
+@param image_path Path to the input image file
+@type image_path str
+@param hue_shift Amount to shift the hue channel in degrees (0-360)
+@type hue_shift float
+@param value_exp Exponential value for value channel modification (0.5-4)
+@type value_exp float
+@param save_path Optional path to save the modified image
+@type save_path str or None
+@param print_values Whether to print detailed transformation values
+@type print_values bool
+
+@return Tuple containing (original_image, modified_loops, modified_numpy)
+@rtype tuple(numpy.ndarray, numpy.ndarray, numpy.ndarray)
+
+@exception ValueError If the image cannot be loaded or parameters are invalid
+@exception IOError If the save path is invalid
+@exception cv2.error If OpenCV operations fail
+
+@see hsv_to_rgb_loop For loop-based HSV to RGB conversion
+@see hsv_to_rgb_matrix For matrix-based HSV to RGB conversion
+\end{DoxyVerb}
+ \Hypertarget{namespace_static_program_a6d70a2609559663ba707affb75e0b9bd}\index{StaticProgram@{StaticProgram}!show\_results@{show\_results}}
+\index{show\_results@{show\_results}!StaticProgram@{StaticProgram}}
+\doxysubsubsection{\texorpdfstring{show\_results()}{show\_results()}}
+{\footnotesize\ttfamily \label{namespace_static_program_a6d70a2609559663ba707affb75e0b9bd} 
+Static\+Program.\+show\+\_\+results (\begin{DoxyParamCaption}\item[{}]{original}{, }\item[{}]{modified\+\_\+loops}{, }\item[{}]{modified\+\_\+matrix}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Display comparison of original and modified images.
+
+@details Creates a figure with three subplots showing:
+         1. The original image
+         2. The modified image using loop-based conversion
+         3. The modified image using matrix-based conversion
+
+@param original Original RGB image
+@type original numpy.ndarray
+@param modified_loops Modified image using loop-based conversion
+@type modified_loops numpy.ndarray
+@param modified_matrix Modified image using matrix-based conversion
+@type modified_matrix numpy.ndarray
+\end{DoxyVerb}
+ 
