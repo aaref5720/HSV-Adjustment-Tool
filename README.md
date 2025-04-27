@@ -49,7 +49,9 @@ GROUP3_SUBMISSION/
 │   ├── input_image.jpg           # Sample input image for testing
 │   ├── Doxyfile                  # Doxygen configuration
 │   └── docs/html/index.html      # HTML documentation for StaticProgram.py
-├── Presentation.pdf              # 5-slide summary presentation
+├── image.PNG                     # GUI Image
+├── Presentation.pdf              # summary presentation
+├── Presentation.pttx             # summary presentation
 ├── Results/
 │   ├── sample_output.jpg         # Example result image
 │   └── performance.png           # Benchmarking graph
