@@ -110,3 +110,9 @@ python GUI-Program/GUIProgram.py
 
 ---
 
+## Authors
+
+- **Abdelrahman Mohamed** — [LinkedIn Profile](https://www.linkedin.com/in/aaref5720/)
+- **Ahmed Hassan** — [LinkedIn Profile](https://www.linkedin.com/in/arhassan98/)
+
+---
