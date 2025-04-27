@@ -52,9 +52,6 @@ GROUP3_SUBMISSION/
 ├── image.PNG                     # GUI Image
 ├── Presentation.pdf              # summary presentation
 ├── Presentation.pttx             # summary presentation
-├── Results/
-│   ├── sample_output.jpg         # Example result image
-│   └── performance.png           # Benchmarking graph
 └── README.md                     # This file
 ```
 
