@@ -110,6 +110,12 @@ python GUI-Program/GUIProgram.py
 
 ---
 
+## GUI Preview
+
+![GUI Dashboard](image.PNG)
+
+---
+
 ## Authors
 
 - [**Abdelrahman Mohamed**](https://www.linkedin.com/in/aaref5720/)
