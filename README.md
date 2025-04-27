@@ -110,8 +110,3 @@ python GUI-Program/GUIProgram.py
 
 ---
 
-## License
-
-MIT License  
-© 2025 Abdelrahman Mohamed & Ahmed Hassan  
-*Submitted as coursework for Computer Vision – DIT Summer 2025*
