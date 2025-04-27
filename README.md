@@ -112,7 +112,7 @@ python GUI-Program/GUIProgram.py
 
 ## Authors
 
-- **Abdelrahman Mohamed** — [LinkedIn Profile](https://www.linkedin.com/in/aaref5720/)
-- **Ahmed Hassan** — [LinkedIn Profile](https://www.linkedin.com/in/arhassan98/)
+- [**Abdelrahman Mohamed**](https://www.linkedin.com/in/aaref5720/)
+- [**Ahmed Hassan**](https://www.linkedin.com/in/arhassan98/)
 
 ---
